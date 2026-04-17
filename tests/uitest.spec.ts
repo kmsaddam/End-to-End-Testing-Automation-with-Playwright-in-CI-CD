@@ -8,7 +8,7 @@ test('Verify homepage UI elements', async ({ page }) => {
   await expect(page).toHaveTitle(/CozMedix/);
 
   // ✅ Verify logo is visible
-  const logo = page.locator('img[alt="CozMedix - Surgical Appliances ∎ Injury Rehabilitation ∎ Massage Therapy"]');
+  const logo = page.locator('img[data-src="https://www.cozmedix.co.uk/wp-content/uploads/2023/01/logo.png"]');
   await expect(logo).toBeVisible();
 
   // ✅ Verify header is visible
